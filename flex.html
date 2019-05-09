@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .flex-container {
+      background-color: DodgerBlue;
+      height: 600px;
+      display: flex;
+      /* determinar cual es el eje principal 
+          flex-direction: column, column-reverse, row, row-reverse */
+      /* determinar si los elementos deben saltar a una nueva linea o achicarse 
+          flex-wrap: wrap, nowrap, wrap-reverse */
+      /* abreviacion de flex-direction y wrap:
+          flex-flow: column, column-reverse, row, row-reverse */
+      /* alinear los elementos en el eje principal 
+          (horizontal en row, vertical en column)
+          justify-content: flex-start, center, flex-end, space-around, space-between, space-evenly */
+      /* alinear los elementos en el eje secundario
+          (vertical en row, horizontal en column)
+          align-items: flex-start, flex-end, center, stretch  ---> atencion al ponerle un height a los divs     */
+      /* alinear distintas lineas de contenido 
+          align-content: flex-start, center, flex-end, space-around, space-between, space-evenly, strecht (default)
+      */
+      /*flex tienen la propiedad stretch  por defecto, hay que darles height y weight */
+      /* cntrl k+c para coment */
+    
+    } 
+
+    .flex-container>div {
+      background-color: #f1f1f1;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      text-align: center;
+      font-size: 30px;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Flex</h1>
+
+  <!-- usaremos este div para ver las propiedades flex del padre -->
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+
+  <!-- usaremos los siguientes divs para ver las propiedades flex de los hijos -->
+
+  <!-- para ver la propiedad "order" -->
+  
+    <!-- <div class="flex-container">
+    <div style="order: 3">1</div>
+    <div style="order: 2">2</div>
+    <div style="order: 4">3</div> 
+    <div style="order: 1">4</div>
+  </div> -->
+
+  <!-- propiedad flex-grow (default es 0) -->
+  <!-- <div class="flex-container">
+    <div style="flex-grow: 1">1</div>
+    <div style="flex-grow: 1">2</div>
+    <div style="flex-grow: 8">3</div> 
+  </div> -->
+
+<!-- propiedad align-self -->
+<!-- <div class="flex-container">
+  <div>1</div>
+  <div style="align-self: flex-start">2</div>
+  <div style="align-self: flex-end">3</div>
+  <div style="align-self: center">4</div>
+</div> -->
+
+</html>
