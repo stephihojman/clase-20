@@ -26,6 +26,9 @@ header {
   display: flex;
   justify-content: center;
 }
+a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 #banner {
   margin-top: 35px;
   margin-bottom: 35px;
@@ -35,7 +38,7 @@ header {
   background-color: gainsboro;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .linkedin,
@@ -58,7 +61,10 @@ header {
   width: 100%;
   height: auto;
 }
-
+.logos {
+  display: flex;
+  margin-right: -35px;
+}
 .texto {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -69,6 +75,37 @@ h1 {
 p {
   width: 800px;
 }
+#link {
+  margin-left: -10px;
+}
+
+#logoImg {
+  margin-left: -35px;
+}
+
+.perfiles {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.avatar {
+  width: 170px;
+  height: auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: crimson;
+}
+
+.perfiles img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: black;
+  height: 30px;
+}
+
 @media (min-width: 600px) {
   #menu {
     display: none;
