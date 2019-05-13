@@ -1,3 +1,4 @@
+/*NAV*/
 nav {
   color: crimson;
   background-color: black;
@@ -16,31 +17,39 @@ nav {
   width: 100%;
   height: auto;
 }
-
 .menu {
   justify-content: center;
   padding-right: 20px;
 }
-
-header {
-  display: flex;
-  justify-content: center;
+.hamburguesas {
+  width: 50px;
+  height: auto;
+}
+.hamburguesas img {
+  width: 100%;
+  height: auto;
 }
 a {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-#banner {
+/*FIN NAV*/
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
   margin-top: 35px;
   margin-bottom: 35px;
 }
-
+/*FIN HEADER*/
+/*1° DIV*/
 .somos {
   background-color: gainsboro;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
 .linkedin,
 .git {
   width: 60px;
@@ -51,19 +60,18 @@ a {
   width: 100%;
   height: auto;
 }
-
 .logoDos {
   width: 60px;
   height: auto;
+  margin-right: 60px;
 }
-
 .logoDos img {
   width: 100%;
   height: auto;
 }
 .logos {
   display: flex;
-  margin-right: -35px;
+  margin-left: 35px;
 }
 .texto {
   text-align: center;
@@ -73,41 +81,86 @@ h1 {
   color: crimson;
 }
 p {
+  text-align: left;
   width: 800px;
 }
-#link {
-  margin-left: -10px;
+#github {
+  margin-left: 20px;
 }
 
 #logoImg {
-  margin-left: -35px;
+  margin-right: 25px;
 }
-
+/*FIN 1° DIV*/
+/*2° DIV*/
 .perfiles {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
   margin-bottom: 30px;
+  align-items: center;
 }
-.avatar {
+.avatar,
+.nombres {
+  display: flex;
   width: 170px;
-  height: auto;
+  height: 170px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: crimson;
+  text-align: center;
+  align-items: center;
 }
-
 .perfiles img {
   width: 100%;
   height: auto;
+  margin-right: 25px;
 }
-
+/*FIN 2° DIV*/
+/*FOOTER*/
 footer {
+  display: flex;
   background-color: black;
-  height: 30px;
+  height: 40px;
+  color: crimson;
+  align-items: center;
+  justify-content: space-between;
 }
-
+:visited {
+  color: crimson;
+}
+.email img {
+  width: 15px;
+}
+.email {
+  font-size: 15px;
+  margin-left: 30px;
+}
+.redes {
+  display: flex;
+  margin-right: 30px;
+}
+.logoRedes {
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
+}
+.logoRedes img {
+  width: 100%;
+  height: auto;
+}
+/*FIN FOOTER*/
 @media (min-width: 600px) {
-  #menu {
+  .hamburguesas {
     display: none;
   }
 }
+@media (max-width: 600px) {
+  .perfiles {
+    flex-wrap: wrap;
+  }
+  .home {
+    display: none;
+  }
+/*ver el wrap del footer*/
+/*nombres cuando el perfil va en wrap*/
+/*header  ni div somosno cambia*/
