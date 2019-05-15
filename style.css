@@ -33,14 +33,10 @@ a {
 
 header {
   display: flex;
+  justify-content: center;
 }
 .banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  margin: 35px 100px;
+  margin: 35px;
 }
 .banner img {
   width: 100%;
@@ -121,9 +117,9 @@ p {
   margin-right: 25px;
 }
 .nombre-oculto {
-  display: block;
   position: relative;
-  top: 25px;
+  bottom: 90px;
+  left: 120px;
   background-color: rgb(189, 189, 189);
   border-radius: 20%;
   padding: 10px;
@@ -132,7 +128,8 @@ p {
 .trabajo {
   display: block;
   position: relative;
-  bottom: 30px;
+  top: 90px;
+  right: 165px;
   background-color: rgb(189, 189, 189);
   border-radius: 20%;
   padding: 10px;
@@ -195,12 +192,11 @@ footer {
   .perfiles {
     flex-wrap: wrap;
   }
-  header {
-    width: 100%;
-    /* align-content: flex-end; */
-  }
   .nombres {
     display: none;
+  }
+  .avatar p {
+    color: black;
   }
   footer {
     flex-direction: column;
@@ -211,7 +207,7 @@ footer {
     margin-right: 35px;
   }
 }
-/*nombres cuando el perfil va en wrap*/
+/*nombres perfil se amuchan/
 /*header div somos no cambia*/
 
 /* @font-face {
