@@ -1,7 +1,7 @@
 /*NAV*/
 nav {
   color: crimson;
-  background-color: black;
+  background-color: rgb(36, 36, 36);
   height: 70px;
   display: flex;
   align-items: center;
@@ -21,26 +21,30 @@ nav {
   justify-content: center;
   padding-right: 20px;
 }
-.hamburguesas {
-  width: 50px;
-  height: auto;
-}
-.hamburguesas img {
-  width: 100%;
-  height: auto;
+.fas.fa-bars {
+  font-size: 30px;
+  color: black;
 }
 a {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 /*FIN NAV*/
 /*HEADER*/
+
 header {
   display: flex;
-  justify-content: center;
 }
-header img {
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 35px;
   margin-bottom: 35px;
+  margin: 35px 100px;
+}
+.banner img {
+  width: 100%;
+  height: auto;
 }
 /*FIN HEADER*/
 /*1° DIV*/
@@ -109,18 +113,37 @@ p {
   color: crimson;
   text-align: center;
   align-items: center;
+  z-index: 1;
 }
 .perfiles img {
   width: 100%;
   height: auto;
   margin-right: 25px;
 }
+.nombre-oculto {
+  display: block;
+  position: relative;
+  top: 25px;
+  background-color: rgb(189, 189, 189);
+  border-radius: 20%;
+  padding: 10px;
+  z-index: 2;
+}
+.trabajo {
+  display: block;
+  position: relative;
+  bottom: 30px;
+  background-color: rgb(189, 189, 189);
+  border-radius: 20%;
+  padding: 10px;
+  z-index: 2;
+}
 /*FIN 2° DIV*/
 /*FOOTER*/
 footer {
   display: flex;
-  background-color: black;
-  height: 40px;
+  background-color: rgb(36, 36, 36);
+  height: 45px;
   color: crimson;
   align-items: center;
   justify-content: space-between;
@@ -130,6 +153,7 @@ footer {
 }
 .email img {
   width: 15px;
+  margin-right: 5px;
 }
 .email {
   font-size: 15px;
@@ -150,17 +174,54 @@ footer {
 }
 /*FIN FOOTER*/
 @media (min-width: 600px) {
-  .hamburguesas {
+  .fas.fa-bars {
+    display: none;
+  }
+  .nombre-oculto {
+    display: none;
+  }
+  .trabajo {
     display: none;
   }
 }
 @media (max-width: 600px) {
-  .perfiles {
-    flex-wrap: wrap;
-  }
   .home {
     display: none;
   }
-/*ver el wrap del footer*/
+  .logoDos,
+  .logos {
+    display: none;
+  }
+  .perfiles {
+    flex-wrap: wrap;
+  }
+  header {
+    width: 100%;
+    /* align-content: flex-end; */
+  }
+  .nombres {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60px;
+  }
+  .email {
+    margin-right: 35px;
+  }
+}
 /*nombres cuando el perfil va en wrap*/
-/*header  ni div somosno cambia*/
+/*header div somos no cambia*/
+
+/* @font-face {
+font-family: FemomenalSansBold;
+src: url(FenomenalSansBold.woff);
+} 
+.main {
+font-family: FemomenalSansBold;
+}
+linkear de un recurso web una typo que no tenga el usuario en su pc
+*/
+
+/* border-radius para redondear puntas de cajas */
