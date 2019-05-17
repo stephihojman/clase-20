@@ -27,10 +27,10 @@ nav {
 }
 a {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
 }
 /*FIN NAV*/
 /*HEADER*/
-
 header {
   display: flex;
   justify-content: center;
@@ -52,50 +52,45 @@ header {
 }
 .linkedin,
 .git {
-  width: 60px;
+  width: 40px;
   height: auto;
 }
 .linkedin img,
-.git img {
-  width: 100%;
-  height: auto;
-}
-.logoDos {
-  width: 60px;
-  height: auto;
-  margin-right: 60px;
-}
+.git img,
 .logoDos img {
   width: 100%;
   height: auto;
 }
+.logoDos {
+  width: 40px;
+  height: auto;
+  margin-right: 60px;
+}
+.fas.fa-code,
+.fab.fa-github,
+.fab.fa-linkedin {
+  color: rgb(240, 104, 54);
+}
+.logoDos i,
+.git i,
+.linkedin i {
+  font-size: 30px;
+}
 .logos {
   display: flex;
-  margin-left: 35px;
 }
 .texto {
-  text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 70%;
 }
 h1 {
   color: crimson;
-}
-p {
-  text-align: left;
-  width: 800px;
-}
-#github {
-  margin-left: 20px;
-}
-
-#logoImg {
-  margin-right: 25px;
 }
 /*FIN 1° DIV*/
 /*2° DIV*/
 .perfiles {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 30px;
   margin-bottom: 30px;
   align-items: center;
@@ -103,37 +98,40 @@ p {
 .avatar,
 .nombres {
   display: flex;
-  width: 170px;
-  height: 170px;
+  /* width: 170px;
+  height: 170px; */
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: crimson;
   text-align: center;
   align-items: center;
-  z-index: 1;
+  /* z-index: 1; */
 }
-.perfiles img {
+.avatar-oculto {
+  display: flex;
+  width: 170px;
+  height: 170px;
+  flex-direction: column;
+}
+.avatar-oculto img {
   width: 100%;
   height: auto;
   margin-right: 25px;
 }
 .nombre-oculto {
   position: relative;
-  bottom: 90px;
-  left: 120px;
-  background-color: rgb(189, 189, 189);
+  top: 30px;
+  background-color: rgb(233, 233, 233);
   border-radius: 20%;
   padding: 10px;
-  z-index: 2;
+  /* z-index: 2; */
 }
 .trabajo {
-  display: block;
   position: relative;
-  top: 90px;
-  right: 165px;
-  background-color: rgb(189, 189, 189);
+  bottom: 30px;
+  background-color: rgb(233, 233, 233);
   border-radius: 20%;
   padding: 10px;
-  z-index: 2;
+  /* z-index: 2; */
 }
 /*FIN 2° DIV*/
 /*FOOTER*/
@@ -169,6 +167,12 @@ footer {
   width: 100%;
   height: auto;
 }
+.fas.fa-envelope,
+.fab.fa-facebook-square,
+.fab.fa-instagram,
+.fab.fa-twitter-square {
+  color: rgb(240, 104, 54);
+}
 /*FIN FOOTER*/
 @media (min-width: 600px) {
   .fas.fa-bars {
@@ -185,12 +189,16 @@ footer {
   .home {
     display: none;
   }
+  .banner {
+    margin: 0px;
+  }
   .logoDos,
   .logos {
     display: none;
   }
-  .perfiles {
-    flex-wrap: wrap;
+  .perfiles,
+  .avatar {
+    flex-direction: column;
   }
   .nombres {
     display: none;
@@ -207,8 +215,7 @@ footer {
     margin-right: 35px;
   }
 }
-/*nombres perfil se amuchan/
-/*header div somos no cambia*/
+/*nombres perfil se amuchan*/
 
 /* @font-face {
 font-family: FemomenalSansBold;
@@ -219,5 +226,4 @@ font-family: FemomenalSansBold;
 }
 linkear de un recurso web una typo que no tenga el usuario en su pc
 */
-
 /* border-radius para redondear puntas de cajas */
